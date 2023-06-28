@@ -1,0 +1,19 @@
+
+WHAT IS THIS AND WHERE AM I?
+===========================
+
+		This is a CONSCIOUSNESS METER. In the highly influential book 'A Place for Consciousness' (2010) David Chalmers (the author/world-famous philosopher) describes a consciousness meter (p. 49, 91, 99) is defined as a hypothetical device that will measure whether or not an object is conscious.
+
+	A consciousness meter is usually branded as some far-flung future technology, akin to self-driving cars, personal quantum computers, or printers that actually work. Case in point: Chalmers reportedly gave a talk to the CIA, and the audience was visibly interested in the idea of a consciousness meter (p. xvii). 
+
+   Luckily, this BASH script has managed to overcome these technological hurdles: it is a fully functioning BASH script. This BASH script is a consciousness meter. For any given object, it will tell you whether or not that object is conscious.
+
+    How, you ask? How does a humble BASH script such as this manage to realize far-flung ideas about sci-fi technology with only a few lines of code? Good question. The answer is below.
+
+
+One small script for man... one giant leap for mankind
+======================================================
+
+    This consciousness script ONLY WORKS if one of two theories of consciousness is true: illusionism or panpsychism. Illusionism is the view that consciousness is an illusion; practically speaking it amounts to the view that consciousness does not exist. Panpsychism, on the other hand, is the view that everything is conscious (pan = all, psych = mind). As you might imagine, if either of these views are true, then the technological hurdles associated with developing a conscious meter are significantly reduced.
+
+    So I leave you with a conditional statement: IF either illusionism or panpsychism is true, then this BASH script represents a great leap forward for humanity's technological capabilities. Because for the first time in human history we have (freely available on GitHub) a fully functioning consciousness meter.
