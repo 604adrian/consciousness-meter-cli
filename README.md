@@ -19,7 +19,7 @@ How, you ask? Good question. I will explain how. Recall that, in the first parag
 ![demonstration](demo_pic.png)
 
 ### What is panpsychism?
-[Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything[^4]. It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
+[Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything[^4]). It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
 
 ### What is illusionism?
