@@ -19,11 +19,11 @@ How, you ask? Good question. I will explain how. Recall that, in the first parag
 ![demonstration](demo_pic.png)
 
 ### What is panpsychism?
-[Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything. It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
+[Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything[^4]. It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
 
 ### What is illusionism?
-Illusionism (also known by the name of '[eliminative materialism](https://plato.stanford.edu/entries/materialism-eiminative/)') is the view that consciousness is an illusionism. Practically speaking,[^4] this amounts to the view that no one and nothing was, is or ever has been conscious. (This also sounds crazy, but luckily if its true it also means that pain -- being a state of consciosuness -- is also an illusion, so next time you stub your toe it may be of some comfort to you.)
+Illusionism (also known by the name of '[eliminative materialism](https://plato.stanford.edu/entries/materialism-eiminative/)') is the view that consciousness is an illusionism. Practically speaking,[^5] this amounts to the view that no one and nothing was, is or ever has been conscious. (This also sounds crazy, but luckily if its true it also means that pain -- being a state of consciosuness -- is also an illusion, so next time you stub your toe it may be of some comfort to you.)
 
 
 ### Why illusionism or panpsychism? 
