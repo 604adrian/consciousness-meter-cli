@@ -4,11 +4,11 @@
 
 ## What is a 'consciousness meter'?
 
-    In the 'The Character of Consciousness' by David Chalmers, a consciousness meter is defined as a hypothetical device that will measure whether or not a given object is conscious.
+    In the 'The Character of Consciousness' by David Chalmers, a consciousness meter is defined as a hypothetical device that will measure whether or not a given object is conscious.[^1]
 
        For example, if you point a consciousness meter at yourself, then it will scan you and report back that you are conscious -- if you point at another person who is awake, it will probably say they are conscious. If you point it at a person in a coma, or an inanimate object like a rock, it will probably say they are not (there might not be entirely true but we'll get to that in a second). The consciousness meter would be useful for descerning between, for example, a patient who is completely brain dead versus a pateint who is fully awake but completely paralyzed. It would also be useful for determining edge cases of lifeforms that are not obviously conscious but not obviously not conscious, either (examples include slugs, bugs, Venus Fly Traps, or a flying alien trapped on Venus).
 
-       A consciousness meter is usually described as some far-flung futuristic technology, like self-driving cars, quantum computers or printers that actually function properly. Case in point: Chalmers himself seems to be of the view that the mighty consciousness meter will not be here for some time to come, and the CIA even invited Chalmers to come give a talk for them --- they seemed visibly interested in the part of the talk about the consciousnes meter.
+       A consciousness meter is usually described as some far-flung futuristic technology, like self-driving cars, quantum computers or printers that actually function properly. Case in point: Chalmers himself seems to be of the view that the mighty consciousness meter will not be here for some time to come,[^2] and the CIA even invited Chalmers to come give a talk for them --- they seemed visibly interested in the part of the talk about the consciousnes meter.[^3]
 
        I think it is safe to say, then, that if we were to get a consciousness meter, it would be a huge technological advancement for humanity. That's where this program comes in.
 
@@ -22,12 +22,12 @@
 
 ### What is panpsychism?
 
-        [Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything[^Okay maybe they wouldn't say that _literally everything_ is consciousness --- many panpsychists might have reservations about abstract or higher-order objects like, for example, the nation of Canada. Strictly speaking then this BASH script doesn't work for just any panpsychist, but only the super-duper-hardcore panpsychists. But these subtleties are no fun so I am just going to pretend that they don't exist for now.]). It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
+        [Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything. It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
 
 ### What is illusionism?
 
-    Illusionism (also known by the name of '[eliminative materialism](https://plato.stanford.edu/entries/materialism-eiminative/)') is the view that consciousness is an illusionism. Practically speaking, this amounts to the view that no one and nothing was, is or ever has been conscious. (This also sounds crazy, but luckily if its true it also means that pain -- being a state of consciosuness -- is also an illusion, so next time you stub your toe it may be of some comfort to you.)
+    Illusionism (also known by the name of '[eliminative materialism](https://plato.stanford.edu/entries/materialism-eiminative/)') is the view that consciousness is an illusionism. Practically speaking,[^4] this amounts to the view that no one and nothing was, is or ever has been conscious. (This also sounds crazy, but luckily if its true it also means that pain -- being a state of consciosuness -- is also an illusion, so next time you stub your toe it may be of some comfort to you.)
 
 
 ### Why illusionism or panpsychism? 
@@ -48,4 +48,31 @@
 
 # Downloading information
 
+    To download the consciousness meter, copy and paste the following into your terminal, then press enter:
 
+    `git clone  &&\
+    cd consciousness-meter-cli &&\
+    chmod +x install.sh &&\
+    ./install.sh`
+
+If that doesn't work, then try cloning the repository manually using your preferred method. Then go to the repository's directory on your computer. Then make the install script executable and run it. It is recommended that you use Bash for this (though Zsh is probably fine too).
+
+
+## Dependencies
+
+    The consciousness meter has a two dependancies: Python3 and pip3.
+
+    To see if python3 is installed on your system, go to your terminal and input `python3 --version`. If python3 is installed on your system, it will give you a version number. If it's not, it will give you an error message, and you should go and install python3 before proceeding.
+
+    To see if pip3 is installed on your system, go to your terminal and input `pip3 --version`. If pip3 is installed on your system, it will give you a version number. If it is not installed, it will give you an error message, and you should go and install pip3 before proceeding.
+
+## Installing
+
+
+
+[^1]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. 49, 91, 99. New York: Oxford University Press.
+[^4]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvi. New York: Oxford University Press.
+[^3]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvii. New York: Oxford University Press.
+Also see: Symes, J. (Host). (2020, July 19). [Episode 83](https://thepanpsycast.com/panpsycast2/episode83-1), The David Chalmers Interview (Part I - Consciousness). In The Panpsycast Philosophy Podcast
+[^4]: Okay maybe they wouldn't say that _literally everything_ is consciousness --- many panpsychists might have reservations about abstract or higher-order objects like, for example, the nation of Canada. Strictly speaking then this BASH script doesn't work for just any panpsychist, but only the super-duper-hardcore panpsychists. But these subtleties are no fun so I am just going to pretend that they don't exist for now.
+[^5]: If we want to get pedantic, would could argue that it's _technically_ possible for both illusionism to be true and for some things to be conscious (something kinda, sorta not-really but maybe similar is arguably going on [here](https://philpapers.org/rec/ROEDPM)). But this would mean that consciousness just so happens to exist, even though we are mistaken about it existing in ourselves. But that doesn't make much sense, does it? So we can safely shelve this possibility and never think about it again.
