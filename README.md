@@ -52,10 +52,10 @@ To see if pip3 is installed on your system, go to your terminal and input `pip3 
 ## Installing
 To download the consciousness meter, copy and paste the following into your terminal, then press enter:
 
-    `git clone https://github.com/604adrian/consciousness-meter-cli.git &&\
+    git clone https://github.com/604adrian/consciousness-meter-cli.git &&\
     cd consciousness-meter-cli &&\
     chmod +x install.sh &&\
-    ./install.sh`
+    ./install.sh
 
 If that doesn't work, then try cloning the repository manually using your preferred method. Then go to the repository's directory on your computer. Then make the install script executable and run it. It is recommended that you use Bash for this (though Zsh is probably fine too).
 
