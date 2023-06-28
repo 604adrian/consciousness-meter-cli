@@ -64,7 +64,7 @@ If that doesn't work, then try cloning the repository manually using your prefer
 
 
 [^1]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. 49, 91, 99. New York: Oxford University Press.
-[^4]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvi. New York: Oxford University Press.
+[^2]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvi. New York: Oxford University Press.
 [^3]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvii. New York: Oxford University Press.
 Also see: Symes, J. (Host). (2020, July 19). [Episode 83](https://thepanpsycast.com/panpsycast2/episode83-1), The David Chalmers Interview (Part I - Consciousness). In The Panpsycast Philosophy Podcast
 [^4]: Okay maybe they wouldn't say that _literally everything_ is consciousness --- many panpsychists might have reservations about abstract or higher-order objects like, for example, the nation of Canada. Strictly speaking then this BASH script doesn't work for just any panpsychist, but only the super-duper-hardcore panpsychists. But these subtleties are no fun so I am just going to pretend that they don't exist for now.
