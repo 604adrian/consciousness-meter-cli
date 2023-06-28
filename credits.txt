@@ -18,13 +18,13 @@ STEPHAN, Public domain, via Wikimedia Commons
 URL: https://commons.wikimedia.org/wiki/File:Comic_or_50ties_sci_fi_ufo.ogg
 
 
-The car unlocking 'ba-beep' sound
-=================================
+The input sound
+===============
 
-	The sound of the car unlocking comes from:
+	The sound associated with the input prompt comes from:
 
-HC, Public domain, via Wikimedia Commons
-URL: https://commons.wikimedia.org/wiki/File:Unlocking_a_car.ogg
+WUZZY, Visager, ost1, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+URL: https://upload.wikimedia.org/wikipedia/commons/8/89/Glitch_by_Wuzzy_%28Minetest%29_glitch_gui_button_press.ogg
 
 
 The anticipation sound
