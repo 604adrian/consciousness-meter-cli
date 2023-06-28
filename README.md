@@ -16,6 +16,7 @@ Ladies and gentlemen (or anyone else) I now present to you the world's first eve
 
 How, you ask? Good question. I will explain how. Recall that, in the first paragraph of this document, I said that this consciousness meter is "100% accurate provided certain conditions are met." These conditions are that one of two philosophical frameworks be true: illusionism or panpsychism. The consciousness meter can work with either, since it runs in two modes: illusionist mode or panpsychist mode:
 
+![demonstration](demo_pic)
 
 ### What is panpsychism?
 [Panpsychism](https://plato.stanford.edu/entries/panpsychism/) is the view that everything is conscious (yes, everything. It sounds crazy, but it is subscribed to by some prominent philosophers, and is an implication of certain reputable scientific theories, like [Integrated Information Theory](https://en.wikipedia.org/wiki/Integrated_information_theory).
