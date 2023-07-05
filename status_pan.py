@@ -32,9 +32,4 @@ def play_sound_two():
     print(style + user_object + " IS CONSCIOUS" + reset)
 
 
-save_user_object()
-play_sound_one()
-print('\033[32m\u2714\033[0m')
-play_sound_two()
-print()
 

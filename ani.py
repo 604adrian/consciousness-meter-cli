@@ -8,7 +8,7 @@ def spinning_cursor():
         for cursor in '|/-\\':
             yield cursor
 
-def animate(stop_event):
+def animate():
     spinner = spinning_cursor()
     while not stop_event.is_set():
         sys.stdout.write(next(spinner))
@@ -39,14 +39,5 @@ def print_scanning_process(item_to_scan):
     # Print green checkmark
     print("\033[32m\u2714\033[0m")
 
-print()
-print_scanning_process(" SCANNING VITALS: ")
-print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
-print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
-print_scanning_process(" SCANNING MICROTUBIALS: ")
-print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
-print_scanning_process(" EXTRACTING SECRET SAUCE: ")
-print_scanning_process(" PROCESSING INPUT: ")
-print()
 
 

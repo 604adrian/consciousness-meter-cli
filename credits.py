@@ -59,4 +59,3 @@ def print_end_credits(text_file, lines_to_print, music_file):
     pygame.mixer.music.stop()
 
 
-print_end_credits('./credits.txt', 15, 'bach.mp3')

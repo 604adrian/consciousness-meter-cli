@@ -9,5 +9,4 @@ def print_status():
     return full_prompt
 
 
-print_status()
 
