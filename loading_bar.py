@@ -6,6 +6,8 @@ from colorama import Fore, Back, Style, init
 
 
 def print_progress_bar(current, total, bar_length=50):
+    current = 0
+    total = 100
     progress = float(current) / total    # calculates bar progress
 
     # progress bar

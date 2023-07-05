@@ -8,7 +8,7 @@ def spinning_cursor():
         for cursor in '|/-\\':
             yield cursor
 
-def animate():
+def animate(stop_event):
     spinner = spinning_cursor()
     while not stop_event.is_set():
         sys.stdout.write(next(spinner))
