@@ -62,7 +62,7 @@ def run_common_processes():
     # prompt
     get_object()
     user_object = print_object_status()
-    print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
+    print("\033[1;38;5;95mOBJECT:\033[0m", user_object)
 
     # print scanner output
     print_scanner_output()

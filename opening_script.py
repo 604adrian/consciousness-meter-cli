@@ -11,7 +11,7 @@ def opening():
     print("Navigate with your arrow keys.")
     questions = [
         inquirer.List('options',
-                      message="\033[1m" +  "RUN CONSCIOUSNESS METER IN: " + "\033[0m",
+                      message="\033[1m" +  "RUN CONSCIOUSNESS METER IN" + "\033[0m",
                       choices=["illusionist mode", "panpsychist mode"],
                 ),
     ]
