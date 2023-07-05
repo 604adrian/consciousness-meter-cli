@@ -32,4 +32,4 @@ def get_second_option_pan():
     elif answers['options'] == 'turn off':
         # os.chmod('./shut_down.sh', 0o755)
         # subprocess.call(['./shut_down.sh'])
-        return 'shut_off'
+        return 'turn_off'

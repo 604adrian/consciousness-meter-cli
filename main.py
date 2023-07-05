@@ -1,6 +1,5 @@
 # author: adrian jones
 
-
 # modules to import
 import os
 import sys
@@ -61,9 +60,8 @@ def run_common_processes():
     beep.play_beep()
 
     # prompt
-    user_object = str()
     get_object()
-    print_object_status()
+    user_object = print_object_status()
     print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
 
     # print scanner output
@@ -164,19 +162,19 @@ def shut_off():
 
     # closing animation
     os.chmod('./closing_ani.sh', 0o755)
-    subprocess.run(['./animation.sh'])
+    subprocess.run(['./closing_ani.sh'])
 
     # print end credits
     credits.print_end_credits('./credits.txt', 15, 'bach.mp3')
 
     # fini
-    bold = "\033[1m"
-    reset = "\033[0m"
-    invar = "FINI"
-    message = bold + invar + reset
-    columns = shutil.get_terminal_size().columns
-    print()
-    print(message.center(columns))
+    # bold = "\033[1m"
+    # reset = "\033[0m"
+    # invar = "FINI"
+    # message = bold + invar + reset
+    # columns = shutil.get_terminal_size().columns
+    # print()
+    # print(message.center(columns))
 
 
 def main():
