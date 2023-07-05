@@ -32,13 +32,9 @@ def play_sound_two():
     print(style + user_object + " IS" + "\033[3m NOT " + reset + style + "CONSCIOUS" + reset)
 
 
-def main():
-    save_user_object()
-    play_sound_one()
-    print('\033[1;31mⓧ\033[0m')
-    play_sound_two()
-    print()
+save_user_object()
+play_sound_one()
+print('\033[1;31mⓧ\033[0m')
+play_sound_two()
+print()
 
-
-if __name__ == "__main__":
-    main()

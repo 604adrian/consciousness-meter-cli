@@ -8,9 +8,6 @@ def print_status():
     print(style + full_prompt + reset, end="")
     return full_prompt
 
-def main():
-    print_status()
 
+print_status()
 
-if __name__ == "__main__":
-    main()

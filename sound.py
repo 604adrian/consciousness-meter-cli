@@ -1,7 +1,7 @@
 # author: adrian jones
 
-import pygame()
+import pygame
 
 pygame.mixer.init()
-sound = pygame.mixer.Sound(
+sound = pygame.mixer.Sound()
 

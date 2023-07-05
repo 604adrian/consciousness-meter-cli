@@ -22,13 +22,8 @@ def print_object_status():
         return user_object
 
 
-def main():
-    get_object()
-    print_object_status()
-    # output 
-    print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
-
-
-if __name__ == "__main__":
-    main()
+get_object()
+print_object_status()
+# output 
+print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
 

@@ -39,17 +39,14 @@ def print_scanning_process(item_to_scan):
     # Print green checkmark
     print("\033[32m\u2714\033[0m")
 
-def main():
-    print()
-    print_scanning_process(" SCANNING VITALS: ")
-    print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
-    print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
-    print_scanning_process(" SCANNING MICROTUBIALS: ")
-    print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
-    print_scanning_process(" EXTRACTING SECRET SAUCE: ")
-    print_scanning_process(" PROCESSING INPUT: ")
-    print()
+print()
+print_scanning_process(" SCANNING VITALS: ")
+print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
+print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
+print_scanning_process(" SCANNING MICROTUBIALS: ")
+print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
+print_scanning_process(" EXTRACTING SECRET SAUCE: ")
+print_scanning_process(" PROCESSING INPUT: ")
+print()
 
-if __name__ == "__main__":
-    main()
 
