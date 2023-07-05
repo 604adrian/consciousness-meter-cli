@@ -19,23 +19,19 @@ from opening_script import opening
 from ani import spinning_cursor, animate, print_scanning_process
 import beep
 import credits
-import digital_rain
+from digital_rain import print_digital_rain
 import end_credits_head
 import heading_end
 import heading_ill
 import heading_pan
-import loading_bar
-import menu
-import prompt
-import rain
+from loading_bar import print_progress_bar
+from prompt import get_object, print_object_status
 import second_menu
 import second_menu_pan
 import shut_down
 import status_ill
 import status_pan
 import status_print
-import third_menu
-import two_end_credits_head
 
 
 def print_scanner_output():
@@ -43,13 +39,13 @@ def print_scanner_output():
     The scanner output screen. It mimics a loading screen
     '''
     print()
-    ani.print_scanning_process(" SCANNING VITALS: ")
-    ani.print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
-    ani.print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
-    ani.print_scanning_process(" SCANNING MICROTUBIALS: ")
-    ani.print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
-    ani.print_scanning_process(" EXTRACTING SECRET SAUCE: ")
-    ani.print_scanning_process(" PROCESSING INPUT: ")
+    print_scanning_process(" SCANNING VITALS: ")
+    print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
+    print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
+    print_scanning_process(" SCANNING MICROTUBIALS: ")
+    print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
+    print_scanning_process(" EXTRACTING SECRET SAUCE: ")
+    print_scanning_process(" PROCESSING INPUT: ")
     print()
 
 
@@ -57,7 +53,7 @@ def run_common_processes():
     '''
     Processes that are run in a mode, but do not change between modes
     '''
-    digital_rain.print_digital_rain()
+    print_digital_rain()
 
     # loading bar
     os.chmod('./animation.sh', 0o755)
@@ -65,16 +61,27 @@ def run_common_processes():
     beep.play_beep()
 
     # prompt
-    prompt.get_object()
-    prompt.print_object_status()
-    prompt.print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
+    user_object = str()
+    get_object()
+    print_object_status()
+    print("\033[1;38;5;95mOBJECT: \033[0m ", user_object)
 
     # print scanner output
     print_scanner_output()
 
     # loading bar
     init(autoreset=True)    # init colorama
-    loading_bar.print_progress_bar()
+    base_sleep_rate = 0.1
+    for i in range(101):
+        if 65 <= 1 < 80:
+            sleep_time = base_sleep_rate * 10 # loading slow-down-near 
+        elif i >= 80:
+            sleep_time = base_sleep_rate / 10
+        else:
+            sleep_time = base_sleep_rate
+            time.sleep(sleep_time)
+        print_progress_bar(i, 100)
+    print()
 
     # print status
     status_print.print_status()
@@ -95,7 +102,7 @@ def run_illusionist():
     # the illusionism specific processes
     status_ill.save_user_object()
     status_ill.play_sound_one()
-    status_ill.print('\033[1;31mⓧ\033[0m')
+    print('\033[1;31mⓧ\033[0m')
     status_ill.play_sound_two()
     print()
 
@@ -113,7 +120,7 @@ def run_panpsychist():
     What runs in pansychist mode
     '''
     print()
-    heading_pan.print(message.center(columns))
+    heading_pan.print_startup_message()
 
     run_common_processes()
 
@@ -122,7 +129,7 @@ def run_panpsychist():
     reset = "\033[0m"
     status_pan.save_user_object()
     status_pan.play_sound_one()
-    status_pan.print('\033[32m\u2714\033[0m')
+    print('\033[32m\u2714\033[0m')
     status_pan.play_sound_two()
     print()
 
@@ -161,6 +168,15 @@ def shut_off():
 
     # print end credits
     credits.print_end_credits('./credits.txt', 15, 'bach.mp3')
+
+    # fini
+    bold = "\033[1m"
+    reset = "\033[0m"
+    invar = "FINI"
+    message = bold + invar + reset
+    columns = shutil.get_terminal_size().columns
+    print()
+    print(message.center(columns))
 
 
 def main():

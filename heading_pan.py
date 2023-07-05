@@ -12,4 +12,5 @@ def print_startup_message():
 
 # defining columns for centering
     columns = shutil.get_terminal_size().columns
+    print(message.center(columns))
 
