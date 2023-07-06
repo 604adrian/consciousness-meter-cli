@@ -1,0 +1,105 @@
+
+The idea of a 'consciousness meter'
+===================================
+
+	Officially, the idea of a "consciousness meter" comes from:
+
+CHALMERS, David John (2010). The character of consciousness. pp. xvii, 49, 91 99. New York: Oxford University Press.
+
+	That said, there are rumours that this concept extends even further back. One rumour has it that David Chalmers brought a hotel hair drier to the legendary Tuscan 1994 Science of Consciousness conference, and pointed it at people to determine if they were conscious (Daniel Dennett didn't make the cut). That said, I can't find any primary sources to confirm these events at this time.
+
+
+The start-up sound
+==================
+
+	The consciousness meter startup sound comes from:
+
+STEPHAN, Public domain, via Wikimedia Commons
+URL: https://commons.wikimedia.org/wiki/File:Comic_or_50ties_sci_fi_ufo.ogg
+
+
+The input sound
+===============
+
+	The sound associated with the input prompt comes from:
+
+WUZZY, Visager, ost1, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+URL: https://upload.wikimedia.org/wikipedia/commons/8/89/Glitch_by_Wuzzy_%28Minetest%29_glitch_gui_button_press.ogg
+
+
+The anticipation sound
+======================
+
+	Before the consciousness meter concludes its inquiries, a spooky sound places to build the suspense. Attribution for this sound goes to:
+
+GRAVITY SOUND, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+URL: https://commons.wikimedia.org/wiki/File:Completion_Sound_8_(Gravity_Sound).wav
+
+
+The 'STATUS: NOT CONSCIOUS' sound
+=================================
+
+	When the consciousness meter determines that an object is not conscious, it makes a sound. Attribution for this sound goes to:
+
+GRAVITY SOUND, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+URL: https://commons.wikimedia.org/wiki/File:Error_6_(Gravity_Sound).wav
+
+
+The 'STATUS: CONSCIOUS' sound
+=============================
+
+	When the consciousness meter determines that an object is conscious, it makes a sound. Attribution for this sound goes to:
+
+VERSATILE VIRTUOSO, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+URL: https://commons.wikimedia.org/wiki/File:Success_click_sound.wav
+
+
+The shut-down sound
+===================
+
+	Credit for the shutdown sound goes to:
+
+WUZZY, Visager, ost1, CC BY 4.0 <https://creativecommons.org/licenses/by/4.0>, via Wikimedia Commons
+URL: https://upload.wikimedia.org/wikipedia/commons/c/c8/Glitch_by_Wuzzy_%28Minetest%29_glitch_sounds_glitched.ogg
+
+The end credit music
+====================
+
+	The end credit music is 'Prelude in A minor', by Johann Sebastian Bach. Attribution for the recording goes to:
+
+SYLVIA KIND, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons
+URL: https://commons.wikimedia.org/wiki/File:Johann_Sebastian_Bach_-_Praeludium_A_minor.ogg
+
+
+A helpful Python library
+========================
+
+	I made heavy use of pygame in this app (for the sound effects mostly). By default when you import pygame it prints a support prompt. I suppressed the support prompt in the code in order to not break the flow. That said, pygame is very helpful and I couldn't have done this without it, so the folks over at pygame deserve to have their support prompt seen by the world. Here it is:
+
+PYGAME 2.5.0 (SDL 2.28.0, Python 3.11.4)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+
+
+The code
+========
+
+	According to the extended mind hypothesis I (Adrian Jones) wrote the code, because in that case the internet can be treated as an extension of my memory. But if you reject the extended mind hypothesis, then I wrote the code and the internet was my personal tutor reminding me which python modules to import. My GitHub handle is '604adrian'.
+
+
+And YOU
+=======
+
+	Last but not least I would like to thank YOU, dear user, for two reasons.
+
+	The first is that you are conscious (or at least have the illusion you are conscious) and that is a very interesting thing. It makes life interesting in a literal sense (since the state of 'being interested' is a state of consciousness) and also in a more abstract, theoretical sort of sense  (because consciousness poses a lot of interesting theoretical problems).
+
+	The second reason is that you have (presumably) downloaded this software, or at least checked out its corresponding GitHub page. This gives this software a sort of intersubjective relevance which, it absent, would be kind of sad. Put differently: without you checking out this software I would just be typing these words into the void, and all those painful hours of debugging would have been nothing but an empty personal struggle with no significance beyond my immediate awareness.
+
+	So thank you, dear user, for being conscious (or at least having the ILLUSION of being conscious) of my software.
+
+
+Consciousness itself
+====================
+
+	Thank you consciousness for being so confusing.
+
