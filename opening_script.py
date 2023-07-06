@@ -5,6 +5,7 @@ import inquirer
 import subprocess
 import os
 import time
+import sys
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 

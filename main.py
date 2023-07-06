@@ -172,7 +172,7 @@ def run_panpsychist():
         time.sleep(1)
         run_panpsychist()
     elif second_option_pan == 'switch_modes':
-        click_sound.pheck.mp3'
+        click_sound.play()
         time.sleep(1)
         choose_modes()
     elif second_option_pan == 'turn_off':

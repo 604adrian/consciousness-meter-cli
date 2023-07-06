@@ -1,6 +1,8 @@
 # author: adrian jones
 
 import subprocess
+import os
+import sys
 
 
 

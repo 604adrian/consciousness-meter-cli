@@ -6,6 +6,7 @@ from collections import deque
 import textwrap
 import subprocess
 import shutil
+import sys
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 

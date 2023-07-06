@@ -4,6 +4,7 @@ import time
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
+import sys
 
 
 def resource_path(relative_path):

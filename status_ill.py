@@ -3,6 +3,7 @@ import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 import time
+import sys
 
 style = "\033[1;38;5;95m"
 reset = "\033[0m"

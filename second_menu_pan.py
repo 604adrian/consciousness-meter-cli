@@ -4,6 +4,7 @@ import inquirer
 import subprocess
 import os
 import time
+import sys
 
 def get_second_option_pan():
     time.sleep(1)
