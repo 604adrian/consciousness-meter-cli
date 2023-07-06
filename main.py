@@ -196,13 +196,13 @@ def shut_off():
     credits.print_end_credits('./credits.txt', 15, 'bach.mp3')
 
     # fini
-    # bold = "\033[1m"
-    # reset = "\033[0m"
-    # invar = "FINI"
-    # message = bold + invar + reset
-    # columns = shutil.get_terminal_size().columns
-    # print()
-    # print(message.center(columns))
+    bold = "\033[1m"
+    reset = "\033[0m"
+    invar = "FINI"
+    message = bold + invar + reset
+    columns = shutil.get_terminal_size().columns
+    print()
+    print(message.center(columns))
 
 
 def main():

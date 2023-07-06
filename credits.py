@@ -45,16 +45,6 @@ def print_end_credits(text_file, lines_to_print, music_file):
         print(line)
         time.sleep(0.5)
 
-    # fini banner
-    os.chmod('./2end_credits_head.sh', 0o755)
-    subprocess.run(["./2end_credits_head.sh"])
-    time.sleep(0.5)
-    print()
-    time.sleep(0.5)
-    print()
-    time.sleep(0.5)
-
-
     # stop the sound
     pygame.mixer.music.stop()
 
