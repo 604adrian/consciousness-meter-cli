@@ -10,19 +10,19 @@ import pygame
 
 def resource_path(relative_path):
     ''' Gets absolute path to resources'''
-    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
 
 # usage
-ufo_path - resource_path('./ufo.wav')
+ufo_path = resource_path('./ufo.wav')
 
 
 
 def print_digital_rain():
 # the sound effects
     pygame.mixer.init()
-    sound = pygame.mixer.Sound("ufo.wav")
+    sound = pygame.mixer.Sound(ufo_path)
     sound.play()
 
 # the digital rain

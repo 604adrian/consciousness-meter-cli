@@ -34,7 +34,7 @@ import status_print
 
 def resource_path(relative_path):
     ''' Gets absolute path to resources'''
-    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
 
@@ -49,6 +49,9 @@ antipat_path = resource_path('./antipat.mp3')
 conscious_path = resource_path('./conscious.mp3')
 not_conscious_path = resource_path('./not_conscious.mp3')
 shutdown_path = resource_path('./shutdown.mp3')
+animation_path = resource_path('./animation.sh')
+closing_ani_path = resource_path('./closing_ani.sh')
+credits_path = resource_path('./credits.txt')
 
 
 def print_scanner_output():
@@ -80,8 +83,8 @@ def print_scanner_output():
 def run_digital_rain_and_loading_bar():
     # digital rain and loading bar
     print_digital_rain()
-    os.chmod('./animation.sh', 0o755)
-    subprocess.run(['./animation.sh'])
+    os.chmod(animation_path,  0o755)
+    subprocess.run([animation_path])
     beep.play_beep()
 
 
@@ -207,11 +210,11 @@ def shut_off():
     shut_down.shut_down()
 
     # closing animation
-    os.chmod('./closing_ani.sh', 0o755)
-    subprocess.run(['./closing_ani.sh'])
+    os.chmod(closing_ani_path, 0o755)
+    subprocess.run([closing_ani_path])
 
     # print end credits
-    credits.print_end_credits('./credits.txt', 15, bach_path)
+    credits.print_end_credits(credits_path, 15, bach_path)
 
     # fini
     bold = "\033[1m"

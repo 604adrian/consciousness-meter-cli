@@ -39,7 +39,7 @@ URL: https://commons.wikimedia.org/wiki/File:Beep-09.ogg
 The typing sound
 ================
 
-	The sound associated with text output (the startup header, shut-down header, and hte text in the scanner) comes from:
+	The sound associated with text output (the startup header, shut-down header, and the text in the scanner) comes from:
 
 JEUWRE, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
 URL: https://commons.wikimedia.org/wiki/File:Beep_400ms.ogg
