@@ -4,15 +4,24 @@ import random
 import time
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
-
 import pygame
+
+def resource_path(relative_path):
+    ''' Gets absolute path to resources'''
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    return os.path.join(base_path, relative_path)
+
+
+# usage
+shutdown_path = resource_path('./shutdown.mp3')
+
 
 def shut_down():
     time.sleep(1)
 
 # the sound effects
     pygame.mixer.init()
-    sound = pygame.mixer.Sound("shutdown.mp3")
+    sound = pygame.mixer.Sound(shutdown_path)
     sound.play()
 
 # the digital rain

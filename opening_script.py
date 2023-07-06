@@ -9,9 +9,18 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 
 
+def resource_path(relative_path):
+    ''' Gets absolute path to resources'''
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    return os.path.join(base_path, relative_path)
+
+# usage
+check_path = resource_path('./check.mp3')
+
+
 def opening():
     pygame.mixer.init()
-    click_sound = pygame.mixer.Sound('check.mp3')
+    click_sound = pygame.mixer.Sound(check_path)
     print("Navigate with your arrow keys.")
     questions = [
         inquirer.List('options',

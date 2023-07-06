@@ -37,8 +37,18 @@ def resource_path(relative_path):
     base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
     return os.path.join(base_path, relative_path)
 
+
 # usage
 check_path = resource_path('./check.mp3')
+beep_path = resource_path('./beep.wav')
+button_path = resource_path('./button.mp3')
+ufo_path = resource_path('./ufo.wav')
+bach_path = resource_path('./bach.mp3')
+beep_ogg_path = resource_path('./beep.ogg')
+antipat_path = resource_path('./antipat.mp3')
+conscious_path = resource_path('./conscious.mp3')
+not_conscious_path = resource_path('./not_conscious.mp3')
+shutdown_path = resource_path('./shutdown.mp3')
 
 
 def print_scanner_output():
@@ -154,8 +164,7 @@ def run_panpsychist():
     print()
 
     pygame.mixer.init()
-    click_sound = pygame.mixer.Sound('check.mp3')
-
+    click_sound = pygame.mixer.Sound(check_path)
     # second menu
     second_option_pan = second_menu_pan.get_second_option_pan()
     if second_option_pan == 'panpsychist':
@@ -202,7 +211,7 @@ def shut_off():
     subprocess.run(['./closing_ani.sh'])
 
     # print end credits
-    credits.print_end_credits('./credits.txt', 15, 'bach.mp3')
+    credits.print_end_credits('./credits.txt', 15, bach_path)
 
     # fini
     bold = "\033[1m"
@@ -214,6 +223,7 @@ def shut_off():
     print(message.center(columns))
     print()
     print()
+
 
 def main():
     choose_modes()

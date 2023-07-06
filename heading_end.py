@@ -5,10 +5,21 @@ import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 
+
+def resource_path(relative_path):
+    ''' Gets absolute path to resources'''
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    return os.path.join(base_path, relative_path)
+
+
+# usage
+beep_path - resource_path('./beep.wav')
+
+
 def print_end_heading():
     print()
     pygame.mixer.init()
-    sound = pygame.mixer.Sound('beep.wav')
+    sound = pygame.mixer.Sound(beep_path)
 # printing the weird ANSI code stuff
     green_bold = "\033[1;32m"
     reset = "\033[0m"
