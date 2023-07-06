@@ -2,6 +2,9 @@ import time
 import sys
 import threading
 import random
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
+import pygame
 
 def spinning_cursor():
     while True:
@@ -20,7 +23,15 @@ def print_scanning_process(item_to_scan):
     '''
     Prints the loading/checkmark animation next to a string
     '''
-    print("\033[1;38;5;95m" + item_to_scan + "\033[0m", end=" ")
+    pygame.mixer.init()
+    typing_sound = pygame.mixer.Sound('beep.wav')
+    checkmark_sound = pygame.mixer.Sound('button.mp3')
+    for char in item_to_scan:
+        typing_sound.play()
+        print("\033[1;38;5;95m" + char + "\033[0m", end="", flush=True)
+        time.sleep(0.1)
+
+    print(' ', end="")
 
     stop_event = threading.Event()
 
@@ -33,11 +44,11 @@ def print_scanning_process(item_to_scan):
     time.sleep(random_interval) # replace with your actual work
 
     # Stop the loading animation
+    checkmark_sound.play()
     stop_event.set()
     t.join()
 
     # Print green checkmark
     print("\033[32m\u2714\033[0m")
-
 
 

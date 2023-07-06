@@ -19,8 +19,7 @@ from ani import spinning_cursor, animate, print_scanning_process
 import beep
 import credits
 from digital_rain import print_digital_rain
-import end_credits_head
-import heading_end
+from heading_end import print_end_heading
 import heading_ill
 import heading_pan
 from loading_bar import print_progress_bar
@@ -38,27 +37,39 @@ def print_scanner_output():
     The scanner output screen. It mimics a loading screen
     '''
     print()
-    print_scanning_process(" SCANNING VITALS: ")
-    print_scanning_process(" SCANNING FOR ZOMBIE PROCESSES: ")
-    print_scanning_process(" SCANNING FOR ZOMBIE BLUES: ")
-    print_scanning_process(" SCANNING MICROTUBIALS: ")
-    print_scanning_process(" EXTRACTING GODEL'S THEOREM: ")
-    print_scanning_process(" EXTRACTING SECRET SAUCE: ")
-    print_scanning_process(" PROCESSING INPUT: ")
+
+    print(' ', end="")
+    print_scanning_process("SCANNING VITALS:")
+
+    print(' ', end="")
+    print_scanning_process("SCANNING FOR ZOMBIE PROCESSES:")
+
+    print(' ', end="")
+    print_scanning_process("SCANNING FOR ZOMBIE BLUES:")
+
+    print(' ', end="")
+    print_scanning_process("SCANNING MICROTUBIALS:")
+
+    print(' ', end="")
+    print_scanning_process("EXTRACTING GODEL'S THEOREM:")
+
+    print(' ', end="")
+    print_scanning_process("EXTRACTING SECRET SAUCE:")
+
     print()
+
+def run_digital_rain_and_loading_bar():
+    # digital rain and loading bar
+    print_digital_rain()
+    os.chmod('./animation.sh', 0o755)
+    subprocess.run(['./animation.sh'])
+    beep.play_beep()
 
 
 def run_common_processes():
     '''
     Processes that are run in a mode, but do not change between modes
     '''
-    print_digital_rain()
-
-    # loading bar
-    os.chmod('./animation.sh', 0o755)
-    subprocess.run(['./animation.sh'])
-    beep.play_beep()
-
     # prompt
     get_object()
     user_object = print_object_status()
@@ -91,10 +102,6 @@ def run_illusionist():
     '''
     What runs in illusionism mode
     '''
-    # startup screen
-    print()
-    heading_ill.print_booting_message()
-
     run_common_processes()
 
     # the illusionism specific processes
@@ -104,12 +111,21 @@ def run_illusionist():
     status_ill.play_sound_two()
     print()
 
+    pygame.mixer.init()
+    click_sound = pygame.mixer.Sound('check.mp3')
+
     second_option = second_menu.get_second_option()
     if second_option == 'illusionist2':
+        click_sound.play()
+        time.sleep(1)
         run_illusionist()
     elif second_option == 'switch_modes':
+        click_sound.play()
+        time.sleep(1)
         choose_modes()
     elif second_option == 'turn_off':
+        click_sound.play()
+        time.sleep(1)
         shut_off()
 
 
@@ -117,9 +133,6 @@ def run_panpsychist():
     '''
     What runs in pansychist mode
     '''
-    print()
-    heading_pan.print_startup_message()
-
     run_common_processes()
 
     # the panpscyhist specific processes
@@ -131,13 +144,22 @@ def run_panpsychist():
     status_pan.play_sound_two()
     print()
 
+    pygame.mixer.init()
+    click_sound = pygame.mixer.Sound('check.mp3')
+
     # second menu
     second_option_pan = second_menu_pan.get_second_option_pan()
     if second_option_pan == 'panpsychist':
+        click_sound.play()
+        time.sleep(1)
         run_panpsychist()
     elif second_option_pan == 'switch_modes':
+        click_sound.play()
+        time.sleep(1)
         choose_modes()
     elif second_option_pan == 'turn_off':
+        click_sound.play()
+        time.sleep(1)
         shut_off()
 
 
@@ -147,8 +169,14 @@ def choose_modes():
     '''
     status = opening()
     if status == 'illusionist':
+        print()
+        heading_ill.print_booting_message()
+        run_digital_rain_and_loading_bar()
         run_illusionist()
     elif status == 'panpsychist':
+        print()
+        heading_pan.print_startup_message()
+        run_digital_rain_and_loading_bar()
         run_panpsychist()
 
 
@@ -157,7 +185,7 @@ def shut_off():
     The shutoff sequence
     '''
     # print shufoff heading
-    heading_end.print_end_heading()
+    print_end_heading()
     shut_down.shut_down()
 
     # closing animation
