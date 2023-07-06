@@ -32,6 +32,15 @@ import status_pan
 import status_print
 
 
+def resource_path(relative_path):
+    ''' Gets absolute path to resources'''
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(___file___)))
+    return os.path.join(base_path, relative_path)
+
+# usage
+check_path = resource_path('./check.mp3')
+
+
 def print_scanner_output():
     '''
     The scanner output screen. It mimics a loading screen
@@ -112,7 +121,7 @@ def run_illusionist():
     print()
 
     pygame.mixer.init()
-    click_sound = pygame.mixer.Sound('check.mp3')
+    click_sound = pygame.mixer.Sound(check_path)
 
     second_option = second_menu.get_second_option()
     if second_option == 'illusionist2':
@@ -154,7 +163,7 @@ def run_panpsychist():
         time.sleep(1)
         run_panpsychist()
     elif second_option_pan == 'switch_modes':
-        click_sound.play()
+        click_sound.pheck.mp3'
         time.sleep(1)
         choose_modes()
     elif second_option_pan == 'turn_off':
