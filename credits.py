@@ -5,6 +5,7 @@ import os
 from collections import deque
 import textwrap
 import subprocess
+import shutil
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import pygame
 
@@ -16,8 +17,18 @@ def print_end_credits(text_file, lines_to_print, music_file):
     pygame.mixer.music.play(-1)
 
     # print heading
-    os.chmod('./end_credits_head.sh', 0o755)
-    subprocess.run(["./end_credits_head.sh"])
+    # printing the weird ANSI code stuff
+    bold = "\033[1m"
+    reset = "\033[0m"
+    invar = "END CREDITS"
+    message = bold + invar + reset
+
+    # defining columns for centering
+    columns = shutil.get_terminal_size().columns
+
+    # print 
+    print()
+    print(message.center(columns))
     time.sleep(0.6)
     print()
     time.sleep(0.6)
