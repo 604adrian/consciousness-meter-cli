@@ -203,7 +203,8 @@ def shut_off():
     columns = shutil.get_terminal_size().columns
     print()
     print(message.center(columns))
-
+    print()
+    print()
 
 def main():
     choose_modes()
