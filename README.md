@@ -50,17 +50,8 @@ To see if python3 is installed on your system, go to your terminal and input `py
 To see if pip3 is installed on your system, go to your terminal and input `pip3 --version`. If pip3 is installed on your system, it will give you a version number. If it is not installed, it will give you an error message, and you should go and install pip3 before proceeding.
 
 ## Installing
-To download the consciousness meter, copy and paste the following into your terminal, then press enter:
-
-    git clone https://github.com/604adrian/consciousness-meter-cli.git &&\
-    cd consciousness-meter-cli &&\
-    chmod +x install.sh &&\
-    ./install.sh
-
-If that doesn't work, then try cloning the repository manually using your preferred method. Then go to the repository's directory on your computer. Then make the install script executable and run it. It is recommended that you use Bash for this (though Zsh is probably fine too).
-
-
-
+A prebuilt linux binary can be found on the sidebar. Other installation options to come.
+If you wish to install manually, just run `main.py` in the directory of the repo, and things should work fine from there.
 
 
 [^1]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. 49, 91, 99. New York: Oxford University Press.
