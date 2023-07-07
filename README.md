@@ -43,7 +43,7 @@ That said, I understand that some people may be of the feeling that this program
 # Downloading information
 
 ## Dependencies
-The consciousness meter has a handful of dependancies dependancies: python3, pip3. pygame, and inquirer. If you wish to install this program manually, then installing these will be necessary.
+The consciousness meter has a handful of dependancies: python3, pip3. pygame, and inquirer. If you wish to install this program manually, then installing these will be necessary.
 
 To see if python3 is installed on your system, go to your terminal and input `python3 --version`. If python3 is installed on your system, it will give you a version number. If it's not, it will give you an error message, and you should go and install python3 before proceeding.
 
