@@ -33,7 +33,7 @@ And that is what we have here: a fully functioning consciousness meter that work
 
 
 ### Are you ripping us off?
-Interesting question. Strictly speaking, __NO__ I am not ripping you off, since this GitHub and downloading this code not involve any sort of monetary transaction.
+Interesting question. Strictly speaking, _NO_ I am not ripping you off, since this GitHub and downloading this code not involve any sort of monetary transaction.
 
 That said, I understand that some people may be of the feeling that this program is not what they were expecting. And fair enough: the consciousness meter was advertised as a revolutionary technology, but this code is really nothing more than a glorified  `if/else` statement. I am sympathetic to users who may find this dissapointing.
 
@@ -43,25 +43,20 @@ That said, I understand that some people may be of the feeling that this program
 # Downloading information
 
 ## Dependencies
-The consciousness meter has a two dependancies: Python3 and pip3.
+The consciousness meter has a handful of dependancies dependancies: python3, pip3. pygame, and inquirer. If you wish to install this program manually, then installing these will be necessary.
 
 To see if python3 is installed on your system, go to your terminal and input `python3 --version`. If python3 is installed on your system, it will give you a version number. If it's not, it will give you an error message, and you should go and install python3 before proceeding.
 
 To see if pip3 is installed on your system, go to your terminal and input `pip3 --version`. If pip3 is installed on your system, it will give you a version number. If it is not installed, it will give you an error message, and you should go and install pip3 before proceeding.
 
+Once you have python and pip, then install the modules by copy/pasting the following into your command line:
+
+`pip3 install pygame && pip3 install inquirer`
+
 ## Installing
-To download the consciousness meter, copy and paste the following into your terminal, then press enter:
+A prebuilt linux binary can be found on the sidebar. Other installation options to come.
 
-    git clone https://github.com/604adrian/consciousness-meter-cli.git &&\
-    cd consciousness-meter-cli &&\
-    chmod +x install.sh &&\
-    ./install.sh
-
-If that doesn't work, then try cloning the repository manually using your preferred method. Then go to the repository's directory on your computer. Then make the install script executable and run it. It is recommended that you use Bash for this (though Zsh is probably fine too).
-
-
-
-
+If you wish to install manually, just run clone the repo and run `main.py` in your newfound directory. Things should work fine from there.
 
 [^1]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. 49, 91, 99. New York: Oxford University Press.
 [^2]: Chalmers, David John (2010). [The character of consciousness](https://philpapers.org/rec/CHATCO-14). p. xvi. New York: Oxford University Press.
