@@ -43,7 +43,7 @@ That said, I understand that some people may be of the feeling that this program
 # Downloading information
 
 ## Dependencies
-The consciousness meter has a two dependancies: Python3 and pip3.
+The consciousness meter has a two dependancies: Python3 and pip3. If you wish to install this program manually, then installing these programs will be necessary.
 
 To see if python3 is installed on your system, go to your terminal and input `python3 --version`. If python3 is installed on your system, it will give you a version number. If it's not, it will give you an error message, and you should go and install python3 before proceeding.
 
@@ -51,6 +51,7 @@ To see if pip3 is installed on your system, go to your terminal and input `pip3 
 
 ## Installing
 A prebuilt linux binary can be found on the sidebar. Other installation options to come.
+
 If you wish to install manually, just run `main.py` in the directory of the repo, and things should work fine from there.
 
 
