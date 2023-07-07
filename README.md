@@ -33,7 +33,7 @@ And that is what we have here: a fully functioning consciousness meter that work
 
 
 ### Are you ripping us off?
-Interesting question. Strictly speaking, __NO__ I am not ripping you off, since this GitHub and downloading this code not involve any sort of monetary transaction.
+Interesting question. Strictly speaking, _NO_ I am not ripping you off, since this GitHub and downloading this code not involve any sort of monetary transaction.
 
 That said, I understand that some people may be of the feeling that this program is not what they were expecting. And fair enough: the consciousness meter was advertised as a revolutionary technology, but this code is really nothing more than a glorified  `if/else` statement. I am sympathetic to users who may find this dissapointing.
 
